@@ -13,8 +13,6 @@ import Contact from './pages/Contact';
 
 
 function App() {
-
-
   return (
     <div>
      <BrowserRouter>
@@ -29,8 +27,7 @@ function App() {
       <Route path="/Home" element={<Home/>} />
       <Route path="/Projects" element={<Projects/>} />
       <Route path="/Services" element={<Services/>} />
-
-
+      
      </Routes>
 
      <Footer/>
