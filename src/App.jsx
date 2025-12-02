@@ -9,26 +9,27 @@ import Projects from './pages/Projects';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
-import User from './pages/User';
+import User from './components/User';
 
 function App() {
   return (
     <div>
      <BrowserRouter>
-     <Navbar/>
-     <Layout/>
      <Routes>
 
-      <Route path="/About" element={<About/>} />
-      <Route path="/Contact" element={<Contact/>} />
-      <Route path="/Home" element={<Home/>} />
-      <Route path="/Projects" element={<Projects/>} />
-      <Route path="/Services" element={<Services/>} />
-      <Route path="/User" element={<User/>} />
+      <Route path="/" element={<Layout/>} >
 
+          <Route path="/About" element={<About/>} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/Home" element={<Home/>} />
+          <Route path="/Projects" element={<Projects/>} />
+          <Route path="/Services" element={<Services/>} />
+          <Route path="/user" element={<User/>} />
+
+      </Route>
      </Routes>
 
-     <Footer/>
+
 
      </BrowserRouter>
         
