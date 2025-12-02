@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter,Routes, Route } from 'react-router-dom';
@@ -10,16 +9,14 @@ import Projects from './pages/Projects';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
-
+import User from './pages/User';
 
 function App() {
   return (
     <div>
      <BrowserRouter>
-
      <Navbar/>
      <Layout/>
-
      <Routes>
 
       <Route path="/About" element={<About/>} />
@@ -27,7 +24,8 @@ function App() {
       <Route path="/Home" element={<Home/>} />
       <Route path="/Projects" element={<Projects/>} />
       <Route path="/Services" element={<Services/>} />
-      
+      <Route path="/User" element={<User/>} />
+
      </Routes>
 
      <Footer/>

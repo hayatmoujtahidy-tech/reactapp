@@ -8,17 +8,11 @@ const User = () => {
         axios.get("https://jsonplaceholder.typicode.com/users")
         .then(Response => setUsers(Response.data))
         .catch(error=> console.log("il ya une error")
-    
         )
-        
-
-        
-
-
-    })
+    },[])
   return (
-    <div>{Users.map(user => (
-        <h1key={user.id}>{user.name}</h1>
+    <div>{users.map(user => (
+        <h1 key={user.id}>{user.name}</h1>
         ))}
 
     </div>

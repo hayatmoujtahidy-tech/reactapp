@@ -2,7 +2,11 @@ import React from 'react'
 
 const Layout = () => {
   return (
-    <div></div>
+    <div>
+      <nav></nav>
+      Outlet  
+      ftr
+    </div>
   )
 }
 
